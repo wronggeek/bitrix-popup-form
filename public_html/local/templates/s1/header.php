@@ -15,12 +15,12 @@ IncludeTemplateLangFile(__FILE__);
 		
 		#banner-overlay { 
 			background-image: none;
-			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=SITE_TEMPLATE_PATH?>images/overlay.png', sizingMethod = 'crop'); 
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=SITE_TEMPLATE_PATH?>/images/overlay.png', sizingMethod = 'crop');
 		}
 		
 		div.product-overlay {
 			background-image: none;
-			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=SITE_TEMPLATE_PATH?>images/product-overlay.png', sizingMethod = 'crop');
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?=SITE_TEMPLATE_PATH?>/images/product-overlay.png', sizingMethod = 'crop');
 		}
 		
 	</style>
