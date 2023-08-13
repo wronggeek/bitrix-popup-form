@@ -41,8 +41,8 @@ function createFormMessage($data) {
     $element = new CIBlockElement();
 
     $properties = [
-        "NAME" => $data["name"],
-        "PHONE" => htmlspecialchars($data["phone"]),
+        "NAME"    => $data["name"],
+        "PHONE"   => htmlspecialchars($data["phone"]),
         "MESSAGE" => $data["msg"] ? htmlspecialchars($data["msg"]) : ""
     ];
 

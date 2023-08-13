@@ -13,6 +13,7 @@
         <label for="modal-form-msg">Сообщение:</label>
         <textarea id="modal-form-msg" name="msg" class="modal-form-text-area txt"></textarea>
         <br>
+
         <button id="send">Отправить E-mail</button>
     </form>
 </div>
