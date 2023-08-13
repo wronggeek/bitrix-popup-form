@@ -10,6 +10,14 @@ IncludeTemplateLangFile(__FILE__);
 <link href="<?=SITE_TEMPLATE_PATH?>/common.css" type="text/css" rel="stylesheet" />
 <link href="<?=SITE_TEMPLATE_PATH?>/colors.css" type="text/css" rel="stylesheet" />
 
+<link href="<?=SITE_TEMPLATE_PATH?>/../../content/css/forms/feedback.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="/local/content/js/plugins/jquery.maskedinput.js"></script>
+<script src="/local/content/js/forms/feedback.js"></script>
+
 	<!--[if lte IE 6]>
 	<style type="text/css">
 		
@@ -32,7 +40,7 @@ IncludeTemplateLangFile(__FILE__);
 	<div id="page-wrapper">
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 		<div id="header">
-			
+
 			<table id="logo">
 				<tr>
 					<td><a href="<?=SITE_DIR?>" title="<?=GetMessage('CFT_MAIN')?>"><?
@@ -68,9 +76,11 @@ $APPLICATION->IncludeFile(
 			<div id="top-icons">
 				<a href="<?=SITE_DIR?>" class="home-icon" title="<?=GetMessage('CFT_MAIN')?>"></a>
 				<a href="<?=SITE_DIR?>search/" class="search-icon" title="<?=GetMessage('CFT_SEARCH')?>"></a>
-				<a href="<?=SITE_DIR?>contacts/" class="feedback-icon" title="<?=GetMessage('CFT_FEEDBACK')?>"></a>
+<!--				<a href="--><?php //=SITE_DIR?><!--contacts/" class="feedback-icon" title="--><?php //=GetMessage('CFT_FEEDBACK')?><!--"></a>-->
+                <a class="feedback-icon modal-form-button" data-fancybox href="#modal-form" title="Написать нам"></a>
+                <?include $_SERVER["DOCUMENT_ROOT"]. "/local/content/templates/forms/modal-form.php"?>
 			</div>
-		
+
 		</div>
 		
 		<div id="banner">		
